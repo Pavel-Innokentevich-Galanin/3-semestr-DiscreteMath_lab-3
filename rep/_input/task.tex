@@ -81,6 +81,40 @@
 ]
 {../../src/Dijkstra_s_algorithm.py}
 
+\begin{lstlisting}[
+    name=Console out
+]
+Граф смежности
+[[inf inf inf inf inf inf inf inf]
+ [inf inf  3.  7.  4. inf inf inf]
+ [inf  3. inf  5.  2. inf inf 10.]
+ [inf  7.  5. inf inf inf  4. inf]
+ [inf  4.  2. inf inf  4. inf inf]
+ [inf inf inf inf  4. inf  5.  6.]
+ [inf inf inf  4. inf  5. inf  7.]
+ [inf inf 10. inf inf  6.  7. inf]]
+
+Алгоритм Дейкстры
+Стоимость пути из начальной вершины до остальных:
+1  >  1  =  0.0
+1  >  2  =  3.0
+1  >  3  =  7.0
+1  >  4  =  4.0
+1  >  5  =  8.0
+1  >  6  =  11.0
+1  >  7  =  13.0
+
+Граф смежности
+[[inf inf inf inf inf inf inf inf]
+ [inf inf  3.  7.  4. inf inf inf]
+ [inf  3. inf  5.  2. inf inf 10.]
+ [inf  7.  5. inf inf inf  4. inf]
+ [inf  4.  2. inf inf  4. inf inf]
+ [inf inf inf inf  4. inf  5.  6.]
+ [inf inf inf  4. inf  5. inf  7.]
+ [inf inf 10. inf inf  6.  7. inf]]
+\end{lstlisting}
+
 \newpage
 
 \subsection{Floyd Warshell algorithm}
@@ -90,6 +124,39 @@
     name=Floyd_Warshell_algorithm.py
 ]
 {../../src/Floyd_Warshell_algorithm.py}
+
+\begin{lstlisting}[
+    name=Console out
+]
+Граф смежности
+[[inf inf inf inf inf inf inf inf]
+ [inf inf  3.  7.  4. inf inf inf]
+ [inf  3. inf  5.  2. inf inf 10.]
+ [inf  7.  5. inf inf inf  4. inf]
+ [inf  4.  2. inf inf  4. inf inf]
+ [inf inf inf inf  4. inf  5.  6.]
+ [inf inf inf  4. inf  5. inf  7.]
+ [inf inf 10. inf inf  6.  7. inf]]
+
+Алгоритм Флоида Уоршала
+1  >  1  =  inf
+1  >  2  =  3.0
+1  >  3  =  7.0
+1  >  4  =  4.0
+1  >  5  =  8.0
+1  >  6  =  11.0
+1  >  7  =  13.0
+
+Граф смежности
+[[inf inf inf inf inf inf inf inf]
+ [inf inf  3.  7.  4.  8. 11. 13.]
+ [inf  3. inf  5.  2.  6.  9. 10.]
+ [inf  7.  5. inf  7.  9.  4. 11.]
+ [inf  4.  2.  7. inf  4.  9. 10.]
+ [inf  8.  6.  9.  4. inf  5.  6.]
+ [inf 11.  9.  4.  9.  5. inf  7.]
+ [inf 13. 10. 11. 10.  6.  7. inf]]
+\end{lstlisting}
 
 \newpage
 
@@ -101,6 +168,38 @@
 ]
 {../../src/Kruskal_s_algorithm.py}
 
+\begin{lstlisting}[
+    name=Console out
+]
+Граф смежности
+[[inf  5.  8. inf 11. inf inf]
+ [ 5. inf  4.  8. inf inf inf]
+ [ 8.  4. inf inf inf 10. inf]
+ [inf  8. inf inf inf  2.  6.]
+ [11. inf inf inf inf  7.  4.]
+ [inf inf 10.  2.  7. inf  5.]
+ [inf inf inf  6.  4.  5. inf]]
+
+Алгоритм Краскаля
+Ребро: Вес
+3  -  5  :  2.0
+1  -  2  :  4.0
+4  -  6  :  4.0
+0  -  1  :  5.0
+5  -  6  :  5.0
+1  -  3  :  8.0
+Mинимальная сумма равна:  28.0
+
+Граф смежности
+[[inf inf inf inf 11. inf inf]
+ [inf inf inf inf inf inf inf]
+ [ 8. inf inf inf inf 10. inf]
+ [inf  8. inf inf inf inf inf]
+ [11. inf inf inf inf inf inf]
+ [inf inf 10. inf inf inf inf]
+ [inf inf inf inf inf inf inf]]
+\end{lstlisting}
+
 \newpage
 
 \subsection{Prim's algorithm}
@@ -110,6 +209,39 @@
     name=Prim_s_algorithm.py
 ]
 {../../src/Prim_s_algorithm.py}
+
+\begin{lstlisting}[
+    name=Console out
+]
+Граф смежности
+[[inf  5.  8. inf 11. inf inf]
+ [ 5. inf  4.  8. inf inf inf]
+ [ 8.  4. inf inf inf 10. inf]
+ [inf  8. inf inf inf  2.  6.]
+ [11. inf inf inf inf  7.  4.]
+ [inf inf 10.  2.  7. inf  5.]
+ [inf inf inf  6.  4.  5. inf]]
+
+Остовные деревья
+Алгоритм Прима
+Ребро : Вес
+0  -  0  :  inf
+0  -  1  :  5.0
+1  -  2  :  4.0
+1  -  3  :  8.0
+3  -  5  :  2.0
+5  -  6  :  5.0
+6  -  4  :  4.0
+
+Граф смежности
+[[inf  5.  8. inf 11. inf inf]
+ [ 5. inf  4.  8. inf inf inf]
+ [ 8.  4. inf inf inf 10. inf]
+ [inf  8. inf inf inf  2.  6.]
+ [11. inf inf inf inf  7.  4.]
+ [inf inf 10.  2.  7. inf  5.]
+ [inf inf inf  6.  4.  5. inf]]
+\end{lstlisting}
 
 \newpage
 
@@ -133,6 +265,14 @@
 ]
 {../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/dfs.cpp}
 
+\begin{lstlisting}[
+    name=Console out
+]
+Обход графа в ширину начиная с 0 вершины: 
+1 2 3 4 
+Число компонент связности: 3
+\end{lstlisting}
+
 \newpage
 
 \subsection{BFS}
@@ -148,6 +288,14 @@
     name=bfs.cpp,
 ]
 {../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/bfs.cpp}
+
+\begin{lstlisting}[
+    name=Console out
+]
+Обход в глубину графа:
+1 2 3 4 5 6 7 8 9 
+Число компонент связности: 3
+\end{lstlisting}
 
 \newpage
 
@@ -165,6 +313,18 @@
 ]
 {../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/floyd.cpp}
 
+\begin{lstlisting}[
+    name=Console out
+]
+0    5    4    8    9   11   13 
+5    0    9    3    6    6    8 
+4    9    0   11    5    7   10 
+8    3   11    0    8    4    7 
+9    6    5    8    0    4    7 
+11    6    7    4    4    0    3 
+13    8   10    7    7    3    0 
+\end{lstlisting}
+
 \newpage
 
 \subsection{Kruskal}
@@ -180,6 +340,19 @@
     name=Kruskal.cpp,
 ]
 {../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/Kruskal.cpp}
+
+\begin{lstlisting}[
+    name=Console out
+]
+Минимальное остовное дереро (алгоритм Крускала):
+Ребро : Вес
+a - b : 2
+b - e : 3
+a - c : 4
+d - f : 4
+a - f : 5
+d - g : 6
+\end{lstlisting}
 
 \newpage
 
@@ -197,6 +370,19 @@
 ]
 {../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/prim.cpp}
 
+\begin{lstlisting}[
+    name=Console out
+]
+Минимальное остовное дереро (алгоритм Прима):
+Ребро : Вес
+a - b : 2
+b - e : 3
+a - c : 4
+a - f : 5
+f - d : 4
+d - g : 6
+\end{lstlisting}
+
 \newpage
 
 \subsection{Pruefer}
@@ -212,6 +398,38 @@
     name=pruefer.cpp,
 ]
 {../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/pruefer.cpp}
+
+\begin{lstlisting}[
+    name=Console out
+]
+Исходное дерево:
+0 1
+0 2
+1 3
+1 4
+2 5
+2 6
+4 7
+7 8
+7 9
+9 10
+9 11
+11 12
+Код Прюфера: 1 2 2 0 1 4 7 7 9 9 11 
+Декодированное дерево:
+3 1
+5 2
+6 2
+2 0
+0 1
+1 4
+4 7
+8 7
+7 9
+10 9
+9 11
+11 12
+\end{lstlisting}
 
 \newpage
 
@@ -231,4 +449,4 @@
 
 \newpage
 
-\input{../_input/literature/literature.tex}
+% \input{../_input/literature/literature.tex}
