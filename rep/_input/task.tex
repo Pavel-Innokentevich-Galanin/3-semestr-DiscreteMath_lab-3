@@ -1,0 +1,234 @@
+\begin{ESKDtitlePage}
+    % Содержание
+    \tableofcontents 
+    \newpage
+\end{ESKDtitlePage}
+
+\begin{center}
+    \textbf{Лабораторная работа №\titlePageLabNumber}
+\end{center}
+
+\textbf{Тема}: "\titlePageTopic".
+
+\textbf{Цель}: "...".
+
+\begin{center}
+    \textbf{Ход работы}:
+\end{center}
+
+\newpage
+
+% \subsection{Графы}
+
+% \begin{enumerate}
+%     \item Построить матрицу смежности и инцидентности для заданного графа. Изобразить граф.
+%     \item По матрице смежности (инцидентности) для каждой из вершин вычислить ее степень. 
+%     \item Используя поиск в глубину и поиск в ширину написать программу, определяющую число компонент связности графа. Методы представляются в виде отдельных функций (или классов).
+%     \item Построить деревья поиска в ширину и глубину. 
+%     \item Из заданного неориентированного графа построить произвольным образом ориентированный граф (добавить к каждому ребру стрелку). Для полученного таким образом ориентированного графа построить матрицу смежности и инцидентности. 
+%     \item Из заданного неориентированного графа построить произвольным образом псевдограф.
+%     \item Варианты заданий указаны в таблице 1.
+%     \item В таблице граф задан списком ребер, например, запись (1,2)означает, что существует ребро, соединяющее вершину 1 с вершиной 2. 
+% \end{enumerate}
+
+% \begin{table}[!htp]
+%     \caption{Пример}
+
+%     \label{tabular:670}
+
+%     \begin{center}
+%         \begin{tabular}{|p{1cm}||p{1cm}|p{1cm}|p{13cm}|}
+% №  & Кол. вершин & Кол. ребер & Задание графа  \\ \hline \hline
+% 1. & 9           & 10         & $(1,2), (1,4), (1,6), (2,3), (2,5), (3,5), (4,5), (4,6), (7,8), (7,9)$ \\ \hline
+% 2. & 6           & 8          & $(1,2), (1,4), (1,5), (1,6), (2,3), (3,4), (4,5), (5,6)$ \\ \hline
+% 3. & 8           & 8          & $(1,2), (1,3), (2,3), (3,4), (3,5), (4,5), (5,6), (7,8)$ \\ \hline
+% 4. & 8           & 6          & $(1,6), (1,8), (2,5), (3,6), (3,8), (4,5)$ \\ \hline
+% 5. & 6           & 10         & $(1,2), (1,3), (1,4), (2,3), (2,4), (3,4), (3,5), (4,5), (4,6), (5,6)$ \\ \hline
+% 6. & 9           & 8          & $(1,2), (1,3), (1,4), (2,3), (2,4), (3,4), (5,6), (6,7), (8,9)$ \\ \hline
+% 7. & 8           & 7          & $(1,4), (2,4), (2,6), (3,6), (4,5), (5,6), (7,8)$ \\ \hline
+% 8. & 6           & 10         & $(1,2), (1,3), (2,3), (2,4), (2,5), (3,4),(3,5), (4,5), (4,6), (5,6)$ \\ \hline
+% 9. & 8           & 8          & $(1,2), (1,3), (1,4), (2,3), (2,4), (3,4), (5,7), (6,8)$ \\ \hline
+% 10.& 6           & 8          & $(1,2), (1,4), (2,3), (2,4), (3,4), (3,6), (4,5), (5,6)$ \\ \hline
+% 11.& 8           & 6          & $(1,3), (2,3), (3,4), (4,5), (5,6), (7,8)$ \\ \hline
+% 12.& 7           & 12         & $(1,2), (1,3), (1,4), (1,6), (2,3), (2,4), (2,6), (2,7), (3,4), (4,5), (5,6), (6,7)$ \\ \hline
+% 13.& 9           & 10         & $(1,2), (1,3), (2,3), (3,4), (4,5), (4,6), (3,4), (7,8), (7,9), (8,9)$ \\ \hline
+% 14.& 11          & 10         & $(1,2), (2,4), (2,5), (3,4), (4,7), (5,6), (5,7), (7,8), (9,10), (9,11)$ \\ \hline
+%         \end{tabular}
+%     \end{center}
+% \end{table}
+
+% \newpage
+
+\section{Реализация на Python}
+
+\newpage
+
+\subsection{Graph}
+
+\lstinputlisting[
+    language=Python,
+    name=graph.py
+]
+{../../src/graph.py}
+
+\newpage
+
+\subsection{Dijkstra's algorithm}
+
+\lstinputlisting[
+    language=Python,
+    name=Dijkstra_s_algorithm.py
+]
+{../../src/Dijkstra_s_algorithm.py}
+
+\newpage
+
+\subsection{Floyd Warshell algorithm}
+
+\lstinputlisting[
+    language=Python,
+    name=Floyd_Warshell_algorithm.py
+]
+{../../src/Floyd_Warshell_algorithm.py}
+
+\newpage
+
+\subsection{Kruskal's algorithm}
+
+\lstinputlisting[
+    language=Python,
+    name=Kruskal_s_algorithm.py
+]
+{../../src/Kruskal_s_algorithm.py}
+
+\newpage
+
+\subsection{Prim's algorithm}
+
+\lstinputlisting[
+    language=Python,
+    name=Prim_s_algorithm.py
+]
+{../../src/Prim_s_algorithm.py}
+
+\newpage
+
+% = = = = =
+
+\section{Реализация на C++}
+
+\newpage
+
+\subsection{DFS}
+
+\lstinputlisting[
+    language=C,
+    name=dfs.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/dfs.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=dfs.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/dfs.cpp}
+
+\newpage
+
+\subsection{BFS}
+
+\lstinputlisting[
+    language=C,
+    name=bfs.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/bfs.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=bfs.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/bfs.cpp}
+
+\newpage
+
+\subsection{Floyd}
+
+\lstinputlisting[
+    language=C,
+    name=floyd.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/floyd.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=floyd.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/floyd.cpp}
+
+\newpage
+
+\subsection{Kruskal}
+
+\lstinputlisting[
+    language=C,
+    name=Kruskal.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/Kruskal.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=Kruskal.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/Kruskal.cpp}
+
+\newpage
+
+\subsection{Prim}
+
+\lstinputlisting[
+    language=C,
+    name=prim.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/prim.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=prim.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/prim.cpp}
+
+\newpage
+
+\subsection{Pruefer}
+
+\lstinputlisting[
+    language=C,
+    name=pruefer.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/pruefer.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=pruefer.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/pruefer.cpp}
+
+\newpage
+
+\subsection{Main}
+
+\lstinputlisting[
+    language=C,
+    name=main.hpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/main.hpp}
+
+\lstinputlisting[
+    language=C,
+    name=main.cpp,
+]
+{../../src/CodeBlocks_3-semestr-DiscreteMath_lab-3/main.cpp}
+
+\newpage
+
+\input{../_input/literature/literature.tex}
